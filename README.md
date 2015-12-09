@@ -62,6 +62,11 @@ Microsoft Windows [Version 10.0.10240]
 
 C:\row>
 ```
+Next, lets launch explorer (the dot says to open explorer in the current directory):
+```cmd
+C:\row>explorer .
+```
+Right-click on row.bat and select 'Send to' -> 'Desktop (create shortcut).  With that, now you'll be able to easily launch the Rails on Windows command prompt.
 
 ## Install Ruby and Devkit
 
