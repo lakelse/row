@@ -44,7 +44,7 @@ Next, we want to create a batch file which we'll use to somewhat consolidate and
 C:\row>notepad row.bat
 ```
 Notepad should have started and will prompt you to create the file, choose yes.  Next add the following to the file:
-```
+```cmd
 REM Set PATH to directories as required
 set PATH=c:\windows;c:\windows\system32
 
@@ -56,3 +56,9 @@ Save the file and close notepad.  At the command prompt type the following and h
 C:\row>row.bat
 ```
 If the batch file was created properly, a new cmd prompt window should have opened named 'Rails on Windows'.
+```cmd
+Microsoft Windows [Version 10.0.10240]
+(c) 2015 Microsoft Corporation. All rights reserved.
+
+C:\row>
+```
