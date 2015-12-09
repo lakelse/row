@@ -28,7 +28,7 @@ Download...
   - choose the binary 'Setup' which is an installer
 
 
-Install...
+## Initial setup
 
 Open the command prompt, 'cmd'.  Create a directory off of the root of your drive, for most people this will be c:, type the following to create the row directory and then navigate to it with 'cd' or change directory.
 ```cmd
@@ -62,3 +62,8 @@ Microsoft Windows [Version 10.0.10240]
 
 C:\row>
 ```
+
+## Install Ruby and Devkit
+
+* Run the ruby installer and choose ```c:\row\local``` as the installation location.
+* Run the devkit self-extracting exe file, and extract to ```c:\row\local```
