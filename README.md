@@ -134,4 +134,4 @@ Save the file, close the command prompt windows and lets double-click the row.ba
 ```bash
 [Jon@Jon-PC ~]$
 ```
-The .bashrc file is run everytime the bash shell starts up.  So, in this case, when bash starts the PS1 and PS2 environment variables are set to configure the prompt in the format we see.  You can configure the shell's prompt any way you like.  This configuration I've chosen is common which lists the user@host and lists the current directory.  (~ refers to the HOME directory, so whenever you want to go back to the HOME directory simply type: ```cd ~```. 
+The .bashrc file is run everytime the bash shell starts up.  So, in this case, when bash starts the PS1 and PS2 environment variables are set to configure the prompt in the format we see.  You can configure the shell's prompt any way you like.  This configuration I've chosen is common which lists the user@host and lists the current directory.  (~ refers to the HOME directory, so for example if you want to change directory back to HOME you'd simply type: ```cd ~```. 
