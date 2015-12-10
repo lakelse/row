@@ -135,3 +135,45 @@ Save the file, close the command prompt windows and lets double-click the row.ba
 [Jon@Jon-PC ~]$
 ```
 The .bashrc file is run everytime the bash shell starts up.  So, in this case, when bash starts the PS1 and PS2 environment variables are set to configure the prompt in the format we see.  You can configure the shell's prompt any way you like.  This configuration I've chosen is common which lists the user@host and lists the current directory.  (~ refers to the HOME directory, so for example if you want to change directory back to HOME you'd simply type: ```cd ~```. 
+
+## Install tar and gzip
+In the Unix/Linux world, source code is often distributed as a compressed tar of files.  Tar combines the files into one and gzip is often used to compress the file.
+
+To install 'tar', double-click on the tar exe (tar-1.13-1-bin.exe) to launch the installer.  Choose c:\row\local for the installation location.
+
+To install 'gzip', right-click on 'gzip-1.3.12-1-bin.zip' and select 'Extract all' to unzip the archive to c:\row\local.
+
+Now, to test that the installations of gzip and tar have been successful, double-click row.bat shortcut and type the following:
+```bash
+[Jon@Jon-PC src]$ where gzip
+c:\row\local\bin\gzip.exe
+[Jon@Jon-PC src]$ where tar
+c:\row\local\bin\tar.exe
+[Jon@Jon-PC src]$
+```
+The 'where' command should indicated the path to each executable.
+
+## Install SQLite
+To install SQLite, first create a directory under local called src and change directory to it:
+```bash
+[Jon@Jon-PC ~]$ cd local
+[Jon@Jon-PC local]$ mkdir src
+[Jon@Jon-PC local]$ cd src
+[Jon@Jon-PC src]$ 
+```
+Next, using explorer, copy sqlite-autoconf-3090200.tar.gz from your downloads folder/directory and paste it in c:\row\local\src.
+
+With the sqlite src in the src directory, first uncompress the file:
+```bash
+[Jon@Jon-PC src]$ gzip -d sqlite-autoconf-3090200.tar.gz
+[Jon@Jon-PC src]$ 
+```
+
+Now when you do an 'ls' you should see the following:
+```bash
+[Jon@Jon-PC src]$ ls -al
+total 8764
+drwxr-xr-x  2 Jon Administrators       0 Dec 10 16:58 .
+drwxr-xr-x 16 Jon Administrators    4096 Dec  8 17:42 ..
+-rw-r--r--  1 Jon Administrators 8970240 Dec  8 17:41 sqlite-autoconf-3090200.tar
+```
