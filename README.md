@@ -212,13 +212,34 @@ After you've watched the contents extracted into the sqlite-autoconf-3120200, ch
 ```
 
 ```bash
-[Jon@Jon-PC src]$ ./configure --prefix=/c/row/local
+[Jon@Jon-PC sqlite-autoconf-3120200]$ ./configure --prefix=/c/row/local
 ```
 
 ```bash
-[Jon@Jon-PC src]$ make
+[Jon@Jon-PC sqlite-autoconf-3120200]$ make
 ```
 
 ```bash
-[Jon@Jon-PC src]$ make install
+[Jon@Jon-PC sqlite-autoconf-3120200]$ make install
+```
+
+To verify sqlite is installed, try running the 'sqlite3' command:
+```bash
+[Jon@Jon-PC sqlite-autoconf-3120200]$ sqlite3
+SQLite version 3.12.2 2016-04-18 17:30:31
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite>
+```
+
+If you see the above, sqlite installed successfully.  To exit, type '.q':
+```bash
+[Jon@Jon-PC sqlite-autoconf-3120200]$ sqlite3
+SQLite version 3.12.2 2016-04-18 17:30:31
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> .q
+[Jon@Jon-PC sqlite-autoconf-3120200]$
 ```
