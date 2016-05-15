@@ -23,7 +23,7 @@ Download...
 4. NodeJS
   - choose the 32 bit 'Windows Binary (.exe)'
 5. SQLite
-  - choose the 'autoconf' source: sqlite-autoconf-3090200.tar.gz
+  - choose the 'autoconf' source: sqlite-autoconf-3120200.tar.gz
 6. Tar
   - choose the binary 'Setup' which is an installer
 
