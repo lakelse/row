@@ -235,11 +235,6 @@ sqlite>
 
 If you see the above, sqlite installed successfully.  To exit, type '.q':
 ```bash
-[Jon@Jon-PC sqlite-autoconf-3120200]$ sqlite3
-SQLite version 3.12.2 2016-04-18 17:30:31
-Enter ".help" for usage hints.
-Connected to a transient in-memory database.
-Use ".open FILENAME" to reopen on a persistent database.
 sqlite> .q
 [Jon@Jon-PC sqlite-autoconf-3120200]$
 ```
