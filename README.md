@@ -184,7 +184,7 @@ To install SQLite, first create a directory under local called src and change di
 [Jon@Jon-PC local]$ cd src
 [Jon@Jon-PC src]$ 
 ```
-Next, using explorer, copy sqlite-autoconf-3090200.tar.gz from your downloads folder/directory and paste it in c:\row\local\src.
+Next, using explorer, copy sqlite-autoconf-3120200.tar.gz from your downloads folder/directory and paste it in c:\row\local\src.
 
 With the sqlite src in the src directory, first uncompress the file:
 ```bash
