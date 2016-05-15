@@ -233,8 +233,23 @@ Use ".open FILENAME" to reopen on a persistent database.
 sqlite>
 ```
 
-If you see the above, sqlite installed successfully.  To exit, type '.q':
+If you see the above, sqlite installed successfully.  To exit, type '.q' and press enter.  Alternatively hit ctrl-c:
 ```bash
 sqlite> .q
 [Jon@Jon-PC sqlite-autoconf-3120200]$
 ```
+
+-- install atom
+-- use sqlite3 gem test code to prove gem is installed
+
+
+gem install bundler
+bundle config build.sqlite3 --with-sqlite3-include=/c/row/local/include --with-sqlite3-lib=/c/row/local/lib
+
+- install rails
+gem install rails
+
+make sure sqlite3-1.3.11-x86-mingw32 is uninstalled
+gem uninstall sqlite3 (remove mingw32)
+
+nokogiri apparently doesn't work with 2.3 on windows...  use gem install -f rails add gem 'nokogiri', '>=1.6.8.rc3' to Gemfile
