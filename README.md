@@ -13,8 +13,8 @@ Tar            | http://gnuwin32.sourceforge.net/packages/gtar.htm
 
 Download...
 
-1. Ruby 2.2.3
-  - do <b>not</b> download 'Ruby 2.2.3 <b>(x64)</b>'
+1. Ruby 2.3.0
+  - do <b>not</b> download 'Ruby 2.3.0 <b>(x64)</b>'
   - these instructions cover the 32 bit install of Ruby which will work on both 32 and 64 bit machines
 2. DevKit-mingw<b>64-32</b>-4.7.2-20130224-1151-sfx.exe
   - pay special attention to the name -- important to grab the file with '<b>64-32</b>' in the name
@@ -73,7 +73,30 @@ Right-click on row.bat and select 'Send to' -> 'Desktop (create shortcut).  With
 * Run the ruby installer and choose ```c:\row\local``` as the installation location.
 * Run the devkit self-extracting exe file, and extract to ```c:\row\local```
 
-Close all previous instances of the Rails on Windows command prompt and relaunch using the short-cut created on the Desktop.  Change directory to the 'local' directory:
+Close all previous instances of the Rails on Windows command prompt and relaunch using the short-cut created on the Desktop.  Having now installed Ruby if we try to run ruby to get the version you'll see that we get an error:
+```cmd
+C:\row>ruby -v
+'ruby' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\row>
+```
+The reason for this error is that we haven't updated the PATH variable to include the path to the directory containing the Ruby executable.  Open row.bat with Notepad:
+```cmd
+C:\row>notepad row.bat
+```
+Next add 'c:\row\local\bin' to the PATH variable:
+```cmd
+REM Set PATH to directories as required
+set PATH=c:\windows;c:\windows\system32
+set PATH=%PATH%;c:\row\local\bin
+
+REM Start a command prompt with a title and defaulting to the \row directory
+start "Rails on Windows" /D \row
+```
+
+
+Change directory to the 'local' directory:
 ```cmd
 C:\row>cd local
 ```
@@ -84,7 +107,7 @@ C:\row\local>ruby dk.rb init
 You should see the following output:
 ```cmd
 C:\row\local>ruby dk.rb init
-[INFO] found RubyInstaller v2.2.3 at C:/row/local
+[INFO] found RubyInstaller v2.3.0 at C:/row/local
 
 Initialization complete! Please review and modify the auto-generated
 'config.yml' file to ensure it contains the root directories to all
