@@ -198,5 +198,27 @@ Now when you do an 'ls' you should see the following:
 total 8764
 drwxr-xr-x  2 Jon Administrators       0 Dec 10 16:58 .
 drwxr-xr-x 16 Jon Administrators    4096 Dec  8 17:42 ..
--rw-r--r--  1 Jon Administrators 8970240 Dec  8 17:41 sqlite-autoconf-3090200.tar
+-rw-r--r--  1 Jon Administrators 8970240 Dec  8 17:41 sqlite-autoconf-3120200.tar
+```
+
+Next we will extract the tar file:
+```bash
+[Jon@Jon-PC src]$ tar -xvf sqlite-autoconf-3120200.tar
+```
+
+After you've watched the contents extracted into the sqlite-autoconf-3120200, change directory or 'cd' into it:
+```bash
+[Jon@Jon-PC src]$ cd sqlite-autoconf-3120200
+```
+
+```bash
+[Jon@Jon-PC src]$ ./configure --prefix=/c/row/local
+```
+
+```bash
+[Jon@Jon-PC src]$ make
+```
+
+```bash
+[Jon@Jon-PC src]$ make install
 ```
